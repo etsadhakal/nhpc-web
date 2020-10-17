@@ -18,7 +18,7 @@
           width: 100%;
           img{
             width: 100%;
-            height: 580px;
+            height: 75vh;
             object-fit: cover;
             object-position: center;
           }
@@ -148,6 +148,7 @@
       }
       p{
         margin-left: 30px;
+        margin-bottom: 3px;
       }
     }
     .action-btn{
@@ -277,7 +278,6 @@
           .service-image{
             height: 220px;
             position: relative;
-            border-radius: 7px;
             overflow: hidden;
            img{
             width: 100%;
@@ -302,16 +302,120 @@
             padding: 20px 0px 20px 20px;
             h6{
               font-weight: $exbold;
-              font-size: 1.2rem;
+              font-size: 1.1rem;
             }
             p{
               font-size: 0.95rem;
-              color: $gray-800;
+              color: $gray-600;
+            }
+            .service-link{
+              a{
+                color: $black;
+                vertical-align: middle;
+                transition: all 0.8s;
+                i{
+                  margin-left: 10px;
+                  vertical-align: middle;
+                }
+                &:hover{
+                  color: $primary-color;
+                  transition: all 0.8s;
+                }
+              }
             }
           }
         }
       }
+
+      .slick-slide {
+        margin: 0 10px;
+      }
+      /* the parent */
+      .slick-list {
+        margin: 0 -10px;
+      }
+      
+    }
+    .section-action{
+      margin-top: 40px;
+      .btn{
+        padding: 12px 36px;
+      }
     }
 
   }
+}
+#covidAlert{
+  .alert-wrapper{
+    background: darken($primary-color, 10);
+    padding: 30px 0px;
+    .d-flex{
+      align-items: center;
+    }
+    .alert{
+      color: $white;
+      margin-bottom: 0px;
+      width: 80%;
+      .alert-icon{
+        opacity: .8;
+      }
+      .alert-heading{
+        padding: 0px 30px;
+        h4{
+          margin-bottom: 3px;
+        }
+        p{
+          margin-bottom: 2px;
+        }
+      }
+    }
+    .alert-action{
+      flex-grow: 1;
+      width: 20%;
+      text-align: right;
+      .btn{
+        padding: 12px 36px;
+      }
+    }
+  }
+}
+
+#contact{
+  .contact-content{
+    width: 50%;
+    padding: 60px 0px;
+    background: $white;
+    .list-group{
+      margin-top: 20px;
+      .list-group-item{
+        border: none;
+        padding-left: 0px;
+        padding-right: 0px;
+        a,span{
+          color: $gray-700;
+          i{
+            margin-right: 20px;
+          }
+        }
+        a{
+          &:hover{
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+  .contact-map{
+    width: 50%;
+    iframe{
+      height: 450px;
+      width: 100%;
+    }
+  }
+}
+
+footer{
+  background: $mild-blue;
+  color: $white;
+  padding: 30px 0px;
 }

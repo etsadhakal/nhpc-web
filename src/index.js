@@ -1,8 +1,6 @@
 import 'bootstrap';
 import $ from "jquery";
 
-import imageURL from './assets/trollHuntersArcadia.png';
-
 // JQuery
 $(document).ready(() => {
 
@@ -12,3 +10,4 @@ $(document).ready(() => {
     });
 
 });
+

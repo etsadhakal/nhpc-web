@@ -1,3 +1,7 @@
+$primary-color : #E53E3E;
+$white: #ffffff !important;
+$damp-blue: #1A202C;
+$mild-blue: #2D3748;
 html,
 body {
   margin: 0;
@@ -13,7 +17,6 @@ body {
   border: 0;
   margin: 0;
   padding: 0;
-  min-height: 100%;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
@@ -80,5 +83,32 @@ p {
   font-weight: $medium;
   &:hover{
     @extend .btn-custom;
+  }
+}
+
+.btn-custom-white{
+  background: $white;
+  color: $black !important;
+  font-weight: $medium;
+  border: 2px solid $white;
+}
+
+.btn-outline-custom-white{
+  border: 2px solid $white;
+  color: $white;
+  font-weight: $medium;
+  &:hover{
+    @extend .btn-custom-white;
+  }
+ 
+}
+
+.btn-custom-blue{
+  background: darken($mild-blue, 5);
+  color: $white !important;
+  font-weight: $medium;
+  border: 2px solid darken($mild-blue, 5x);
+  &:hover{
+    @extend .btn-custom-white;
   }
 }

@@ -1,6 +1,317 @@
 @import "~bootstrap/scss/bootstrap";
-@import "colors";
 @import "fonts";
 @import "variables";
 @import "components";
 @import "reset";
+
+#main-banner-slider-updates{
+  margin-top: 105px;
+  .banner-slider{
+    background: #ddd;
+    flex-grow: 2;
+    max-width: 70%;
+    .update-slider{
+      .slide{
+        width: 100%;
+        .contains{
+          position: relative;
+          width: 100%;
+          img{
+            width: 100%;
+            height: 580px;
+            object-fit: cover;
+            object-position: center;
+          }
+          .slide-text{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(170.74deg, rgba(0, 0, 0, 0) 3.97%, rgba(0, 0, 0, 0.46) 44.48%, rgba(0, 0, 0, 0.91) 82.99%);
+            .slide-heading{
+              position: absolute;
+              bottom:100px;
+              left: 100px;
+              padding: 0px 200px 0px 0px;
+              color: $white;
+              h1{
+                line-height: 1.3;
+              }
+              p{
+                font-size: 1rem;
+                font-weight: $regular;
+                letter-spacing: 0.9px;
+              }
+              .btn{
+                margin-top: 20px;
+                padding: 13px 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .news-updates{
+    background: $white;
+    flex-grow: 1;
+    padding: 40px 30px;
+    .heading{
+      h4{
+        margin-bottom: 2px;
+      }
+      p{
+        color: $gray-600;
+      }
+    }
+    .list-updates{
+      .list-group{
+        padding: 0;
+        border: none;
+        .list-group-item{
+          
+          .d-flex{
+            align-items: center; 
+          }
+          border: none;
+          padding: 30px 0px;
+          border-bottom: 1px solid $gray-100;
+          .date{
+            background: $damp-blue;
+            padding: 10px 20px;
+            color: $white;
+            transition: all 0.9s;
+            span{
+              display: block;
+              text-align: center;
+              font-size: 0.85rem;
+            }
+            .month{
+              font-weight: $exbold;
+            }
+          }
+          .news-link{
+            margin-left: 20px;
+            text-align: left;
+            a{
+              color: $black;
+              transition: all 0.8s;
+              &:hover{
+                color: $primary-color;
+                transition: all 0.8s;
+              }
+            }
+          }
+          &:hover{
+            .date{
+              background: $primary-color;
+              transition: all 0.9s;
+            }
+          }
+        }
+      }
+    }
+    .news-redirects{
+      padding-top: 30px;
+      a{
+        color: $gray-600;
+        transition: all 0.8s;
+        vertical-align: middle;
+        font-weight: $semibold;
+              &:hover{
+                color: $primary-color;
+                transition: all 0.8s;
+              }
+              i{
+                vertical-align: middle;
+              }
+      }
+    }
+  }
+}
+
+#announcement{
+  .announcement-wrapper{
+    background: $mild-blue;
+    color: lighten($mild-blue, 60);
+    padding: 24px 0px;
+    .d-flex{
+      align-items: center;
+    }
+    .heading{
+      h5{
+        margin-bottom: 0px;
+        i{
+          margin-right: 10px;
+        }
+      }
+      p{
+        margin-left: 30px;
+      }
+    }
+    .action-btn{
+      .btn{
+        color: $white;
+        padding: 10px 36px;
+        &:hover{
+          color: $mild-blue !important;
+        }
+      }
+    }
+  }
+}
+
+#intro{
+  .intro-wrapper{
+    padding: 90px 0px;
+    .heading{
+      p{
+        color: $gray-700;
+      }
+    }
+    .stats{
+      margin: 40px 0px;
+      .stats-wrapper{
+        div{
+          padding: 20px 80px;
+        }
+        .studied-nepal{
+          text-align: right;
+          border-right: 1px solid $gray-200;
+        }
+      }
+    }
+    .stats-action{
+      a{
+        span{
+          display: block;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+#messages{
+  .messages-wrapper{
+    .all-messages{
+      min-height: 400px;
+      background: $damp-blue;
+      width: 50%;
+      padding: 80px;
+      color: $white;
+      transition: all 0.9s;
+      h4{
+        line-height: 1.4;
+      }
+      &:hover{
+        background: lighten($primary-color, 3);
+        transition: all 0.9s;
+      }
+    }
+    .message-from-registrar{
+      background: $mild-blue;
+    }
+    .message-quote{
+      padding-top: 20px;
+      .image{
+        padding-right: 30px;
+        img{
+          border-radius: 60px;
+          width: 86px;
+          height: auto;
+          border: 4px solid $white;
+        }
+      }
+      .quote-content{
+        position: relative;
+        padding-top: 20px;
+        padding-right: 12px;
+        .ri{
+          position: absolute;
+          opacity: 0.2;
+          margin-top: -24px;
+          margin-left: -10px;
+        }
+        .quote{
+          line-height: 1.6;
+          font-size: 1.3rem;
+          font-family: $fontEpic;
+          opacity: 1;
+          min-height: 180px;
+        }
+        .name-social{
+          
+          p{
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+          }
+          .social-links{
+            a{
+              color: $white;
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#services{
+  .services-wrapper{
+    padding: 90px 0px;
+    .heading{
+      p{
+        color: $gray-700;
+      }
+    }
+    .service-slider{
+      margin-top: 40px;
+      .slide{
+        .service-box{
+          width: 100%;
+          height: 320px;
+         
+          .service-image{
+            height: 220px;
+            position: relative;
+            border-radius: 7px;
+            overflow: hidden;
+           img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+           }
+           .image-overlay{
+             position: absolute;
+             bottom: 0;
+             height: 100%;
+             width: 100%;
+             background: linear-gradient(180deg, rgba(0, 0, 0, 0.44) 0%, rgba(221, 0, 0, 0) 100%);
+           }
+
+          }
+          .service-heading{
+            position: absolute;
+            margin-left: 40px;
+            background: $white;
+            bottom: 0px;
+            padding: 20px 0px 20px 20px;
+            h6{
+              font-weight: $exbold;
+              font-size: 1.2rem;
+            }
+            p{
+              font-size: 0.95rem;
+              color: $gray-800;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

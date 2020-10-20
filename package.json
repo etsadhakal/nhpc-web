@@ -4,7 +4,7 @@
   "description": "nhpc-website",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/*.html --open -p 4040",
+    "dev": "parcel src/index.html --open -p 4040",
     "build": "parcel build src/*.html --public-url ./",
     "watch": "parcel watch src/*.html --public-url ./"
   },

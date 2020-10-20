@@ -498,6 +498,7 @@ footer{
         text-align: left;
         margin-top: 20px;
         p{
+          text-transform: capitalize !important;
           font-family: $fontEpic;
           transition: all 0.8s;
           font-size: 1rem;
@@ -584,4 +585,43 @@ footer{
     }
   }
 
+}
+
+#functions , #actFormations{
+  padding: 60px 0px;
+  background: $gray-100;
+  .section-wrapper{
+    .heading{
+      margin-bottom: 60px;
+    }
+    .content{
+      background: $white;
+      padding: 35px;
+      margin-bottom: 10px;
+     ul{
+       margin-top: 20px;
+       li{
+         color: $gray-700;
+         font-size: 0.95rem;
+         padding-bottom: 10px;
+         line-height: 1.6;
+       }
+     }
+    }
+  }
+}
+
+.subject-commeete-member{
+  background: $gray-100 !important;
+  .section-wrapper{
+    padding: 50px 0px;
+    border-bottom: 1px solid $gray-200;
+    .members-block{
+      margin-top: 20px !important;
+    }
+    &:last-child{
+      border-bottom: none;
+      padding-bottom: 0px !important;
+    }
+  }
 }

@@ -68,6 +68,7 @@
                   <a class="dropdown-item" href="act-formation.html">Act & Foundation</a>
                   <a class="dropdown-item" href="subject-commetee.html">Subject Commetee Member</a>
                   <a class="dropdown-item" href="#">HRH Registered</a>
+                  <a class="dropdown-item" href="#">NHPC Registered</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Photos & Media</a>
                   <a class="dropdown-item" href="#">News & Updates</a>
@@ -82,25 +83,33 @@
                   Registration
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">For Institutions</a>
-                  <a class="dropdown-item" href="#">For Health Professionals</a>
+                  <a class="dropdown-item" href="reg-institute.html">For Institutions</a>
+                  <a class="dropdown-item" href="reg-healthpro.html">For Health Professionals</a>
                   <a class="dropdown-item" href="#">Eligible Students</a>
                 </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Education</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Education
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="programmes.html">Programmes</a>
+                  <a class="dropdown-item" href="registered-col.html">Registered Colleges</a>
+                  <a class="dropdown-item" href="syllabus.html">Syllabus</a>
+                </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Publications</a>
+                <a class="nav-link" href="publication.html">Publications</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Requirements</a>
+                <a class="nav-link" href="requirements.html">Requirements</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="faq.html">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="btn btn-outline-custom" href="#">Log In</a>
+                <a class="btn btn-outline-custom" data-toggle="modal" data-target="#loginModal">Log In</a>
               </li>
             </ul>
           </div>
@@ -247,7 +256,7 @@
               </div>
             </div>
             <div class="stats-action text-center">
-              <a href="">
+              <a href="services-search.html">
                 <span>See All Registered Professionals Stats</span>
                 <i class="ri-arrow-right-line ri-lg"></i>
               </a>
@@ -364,7 +373,7 @@
                 <p>The search health professionals allows you to search the best level of health professionals around
                   you</p>
                 <div class="service-link">
-                  <a href="">
+                  <a href="services-search.html">
                     Search Now
                     <i class="ri-search-2-line"></i>
                   </a>
@@ -402,7 +411,7 @@
                 <p>The search health professionals allows you to search the best level of health professionals around
                   you</p>
                 <div class="service-link">
-                  <a href="">
+                  <a href="services-search.html#pills-profile-tab">
                     Search Now
                     <i class="ri-search-2-line"></i>
                   </a>
@@ -526,5 +535,45 @@
 
   </script>
 </body>
+<div class="modal fade login" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href="" class="close" data-dismiss="modal"><i class="ri-close-line ri-lg"></i>
+        </a>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-4 offset-md-4">
+            <div class="heading">
+              <h3>Student login</h3>
+            </div>
+            <form action="" class="form-wrapper">
+              <div class="form-group">
+                <label for="">Email Address</label>
+                <input type="email" name="email" id="email" class="form-control" autofocus>
+              </div>
+              <div class="form-group">
+                <label for="">Password</label>
+                <input type="password" class="form-control">
+              </div>
+              <div class="form-group">
+                <div class="btn btn-custom ">Log In</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="sign-up">
+          <h4>Register as Student </h4>
+          <a href="">Create New Account <i class="ri-arrow-right-s-line ri-lg"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </html>

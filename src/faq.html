@@ -18,7 +18,7 @@
     <nav class="navbar top navbar-expand-lg top-fixed navbar-light bg-light">
       <div class="d-flex justify-content-between container-fluid">
         <div class="mail">
-          <a href="">
+          <a href="mailto:info@nphc.org.np" target="_blank">
             <i class="ri-mail-open-line"></i>
             <span>info@nphc.org.np</span>
           </a>
@@ -62,19 +62,18 @@
                   About Us
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="board-members-staffs.html">Board Members & Staffs</a>
+                  <a <a class="dropdown-item" href="board-members-staffs.html">Board Members & Staffs</a>
                   <a class="dropdown-item" href="partners.html">Partners</a>
                   <a class="dropdown-item" href="functions.html">Functions</a>
                   <a class="dropdown-item" href="act-formation.html">Act & Foundation</a>
                   <a class="dropdown-item" href="subject-commetee.html">Subject Commetee Member</a>
-                  <a class="dropdown-item" href="#">HRH Registered</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Photos & Media</a>
-                  <a class="dropdown-item" href="#">News & Updates</a>
+                  <a class="dropdown-item" href="media.html">Photos & Media</a>
+                  <a class="dropdown-item" href="news.html">News & Updates</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="services.html">Services</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -82,25 +81,32 @@
                   Registration
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">For Institutions</a>
-                  <a class="dropdown-item" href="#">For Health Professionals</a>
-                  <a class="dropdown-item" href="#">Eligible Students</a>
+                  <a class="dropdown-item" href="reg-institute.html">For Institutions</a>
+                  <a class="dropdown-item" href="reg-healthpro.html">For Health Professionals</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Education
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="programmes.html">Programmes</a>
+                  <a class="dropdown-item" href="registered-col.html">Registered Colleges</a>
+                  <a class="dropdown-item" href="syllabus.html">Syllabus</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Education</a>
+                <a class="nav-link" href="publication.html">Publications</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Publications</a>
+                <a class="nav-link" href="requirements.html">Requirements</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Requirements</a>
+                <a class="nav-link" href="faq.html">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-outline-custom" href="#">Log In</a>
+                <a class="btn btn-outline-custom" data-toggle="modal" data-target="#loginModal">Log In</a>
               </li>
             </ul>
           </div>
@@ -256,5 +262,45 @@
 
   </script>
 </body>
+<div class="modal fade login" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href="" class="close" data-dismiss="modal"><i class="ri-close-line ri-lg"></i>
+        </a>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-4 offset-md-4">
+            <div class="heading">
+              <h3>Student login</h3>
+            </div>
+            <form action="" class="form-wrapper">
+              <div class="form-group">
+                <label for="">Email Address</label>
+                <input type="email" name="email" id="email" class="form-control" autofocus>
+              </div>
+              <div class="form-group">
+                <label for="">Password</label>
+                <input type="password" class="form-control">
+              </div>
+              <div class="form-group">
+                <div class="btn btn-custom ">Log In</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="sign-up">
+          <h4>Register as Student </h4>
+          <a href="">Create New Account <i class="ri-arrow-right-s-line ri-lg"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </html>

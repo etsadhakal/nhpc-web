@@ -82,6 +82,7 @@ p {
   border: 2px solid $primary-color;
   color: $primary-color;
   font-weight: $medium;
+  
   &:hover{
     @extend .btn-custom;
   }
@@ -126,7 +127,7 @@ p {
     padding: 8px 20px;
     &:hover{
       color: $primary-color;
-      background: lighten($primary-color, 40);
+      background: lighten($primary-color, 60);
     }
   }
 }

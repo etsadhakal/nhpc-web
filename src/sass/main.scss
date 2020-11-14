@@ -427,7 +427,7 @@ footer{
   margin-top: 160px;
   .inner-banner-wrapper{
     background: $gray-100;
-    max-height: 170px; 
+    max-height: 130px; 
     position: relative;
     overflow: hidden;
     .image-wrapper{
@@ -450,7 +450,7 @@ footer{
     .crum-page-title{
       color: $white;
       position: absolute;
-      bottom: 55px;
+      bottom: 36px;
       width: 100%;
       .d-flex{
         align-items: center;
@@ -571,6 +571,7 @@ footer{
             font-size: 1.3rem;
             .name{
               font-weight: $semibold;
+              text-transform: capitalize;
             }
             .icon{
               visibility: hidden;
@@ -873,10 +874,10 @@ footer{
         border-radius: 0px;
         margin: 0;
         padding: 20px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         align-content: center;
         .name{
-          font-family: $fontEpic;
+          font-family: $fontSans;
           font-size: 1.3rem;
           color: $gray-800;
           font-size: 1.3rem;
@@ -939,7 +940,7 @@ footer{
 }
 .faq-banner{
   .inner-banner-wrapper{
-    max-height: 320px !important;
+    max-height: 240px !important;
     .crum-page-title{
       bottom: 130px !important;
     }

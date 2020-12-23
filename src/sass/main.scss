@@ -167,21 +167,34 @@
 
 #intro{
   .intro-wrapper{
-    padding: 90px 0px;
+    padding: 50px 0px;
     .heading{
       p{
         color: $gray-700;
       }
     }
     .stats{
-      margin: 40px 0px;
+      
       .stats-wrapper{
         div{
           padding: 20px 80px;
         }
-        .studied-nepal{
-          text-align: right;
-          border-right: 1px solid $gray-200;
+        table{
+          thead{
+            th{
+              border: none;
+              padding: 20px 0px;
+              font-size: 1.3rem;
+            }
+          }
+          tbody{
+            tr{
+              .total{
+                font-weight: $semibold;
+                color: $primary-color;
+              }
+            }
+          }
         }
       }
     }
@@ -264,7 +277,7 @@
 
 #services{
   .services-wrapper{
-    padding: 90px 0px;
+    padding: 50px 0px;
     .heading{
       p{
         color: $gray-700;
@@ -1085,11 +1098,10 @@ footer{
 #notice{
   background: $gray-100;
   .section-wrapper{
-    padding: 60px 120px 120px 120px;
-    h3{
-      margin-bottom: 30px;
-    }
+    padding: 50px 120px;
+  
     .notice-slider{
+      margin-top: 20px;
       .slick-slide {
         margin: 0 15px;
       }
@@ -1110,37 +1122,34 @@ footer{
         background: $white;
         border-radius: 5px;
         box-shadow: -1px 2px 14px -5px rgba(163,163,163,0.22);
-        .date{
-          background: darken($primary-color, 10);
-          padding: 30px 40px;
-          color: $white;
-          transition: all 0.9s;
-          border-radius: 5px;
-          span{
-            display: block;
-            text-align: center;
-            font-size: 1.5rem;
-            font-weight: $exbold;
-          }
-          .month{
-            font-weight: $medium;
-            font-size: 1.1rem;
-          }
-        }
-        .news-link{
-          margin-left: 20px;
+        
+        .link{
           text-align: left;
-          a{
-            color: $black;
+          color: $black;
             transition: all 0.8s;
-            font-size: 1.2rem;
-            font-weight: $medium;
-            padding: 30px;
+            font-size: 1rem;
+            font-weight: $regular;
+            padding: 20px;
             display: inline-block;
+            border: 1px solid transparent;
             &:hover{
-              color: $primary-color;
               transition: all 0.8s;
+              border: 1px solid $primary-color;
+              background: darken($primary-color, 5);
+              color: $white;
+              span{
+                color: $white;
+              }
             }
+          span{
+            font-size: 0.96rem;
+            color: $primary-color;
+            padding-bottom: 5px;
+            display: block;
+          }
+          a{
+            
+            
           }
         }
         &:hover{
@@ -1151,5 +1160,41 @@ footer{
         }
       }
     }
+  }
+}
+
+.sticky-table{
+  position: fixed;
+  top: 300px;
+  .regis{
+    background: $primary-color;
+    width: 100%;
+    padding: 20px;
+    box-shadow: -1px 2px 14px -5px rgba(163, 163, 163, 0.22);
+    color: $white;
+    display: none;
+    transition: display 0.9s linear;
+    table{
+      color: $white;
+    }
+  }
+  .toggle{
+    a{
+      color: $white;
+      background: darken($primary-color, 5%);
+      font-weight: $bold;
+      font-size: 00.75rem;
+      text-transform: uppercase;
+      writing-mode: vertical-rl;
+      text-orientation: sideways-right;
+      display: inline-block;
+      padding: 20px 15px;
+      letter-spacing: 2px;
+      cursor: pointer;
+    }
+  }
+  .regis-open{
+    display: inline-block;
+    transition: display 0.9s linear;
   }
 }

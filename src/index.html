@@ -693,15 +693,25 @@
       </div>
     </div>
     <div class="toggle">
-      <a onclick="myFunction()">Registration Status</a>
+      <a class="toggle-table">Registration Status</a>
     </div>
   </div>
 </div>
 <script>
-  function myFunction() {
+  $(document).ready(() => {
+    $('.toggle-table').on('click', function (e) {
+      $('.regis').toggleClass("regis-open"); //you can list several class names 
+      e.preventDefault();
+    });
+  });
+
+</script>
+<!-- <script>
+
+  function slideToggle() {
     var element = document.getElementById("reg-stats");
     element.classList.toggle("regis-open");
   }
-</script>
+</script> -->
 
 </html>
